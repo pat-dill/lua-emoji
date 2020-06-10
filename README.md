@@ -10,6 +10,6 @@ print(emoji("Emojis are :ok_hand:!"))
 -- output: Emojis are 👌!
 ```
 
-For a list of emoji aliases, check out this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
+You can find a list of emojis on this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
 The emoji list is generated from Taehoon Kim's [emoji library](https://pypi.org/project/emoji/) for Python.
