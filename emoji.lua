@@ -3647,7 +3647,7 @@ local codes = HttpService:JSONDecode([[
 ]])
 
 local function replacer(item)
-    local name = item:sub(2, -2)
+    local name = item:sub(2, -2):lower()
 
     return codes[name] or item
 end
