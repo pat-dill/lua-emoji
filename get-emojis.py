@@ -14,6 +14,8 @@ for item in names.finditer(r.text):
     e_name = ":{}:".format(name)
     emoji = emojize(e_name, use_aliases=True)
 
+    name = name.lower().replace("_", "").replace("-", "")
+
     if ":" not in emoji:
         dump[name.lower()] = emoji
 
