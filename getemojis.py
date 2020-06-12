@@ -5,7 +5,12 @@ import json
 
 names = re.compile(r"u':(\S+):':")
 
-sanitize = lambda s: s.lower().replace("_", "").replace("-", "").replace(" ", "").replace(".", "")
+def sanitize(s):
+    s = s.lower().replace("_", "").replace("-", "").replace(" ", "")
+    s = s.replace(".", "").replace("dark", "d").replace("light", "l")
+    s = s.replace("medium", "m").replace("skintone", "")
+
+    return s              
 
 def get_emojis():
     dump = {}

@@ -21,10 +21,10 @@ function proto.__call(self, text, skintone)
     return new
 end
 
-Emoji.Dark = "darkskintone"
-Emoji.MediumDark = "mediumdarkskintone"
-Emoji.Medium = "mediumskintone"
-Emoji.MediumLight = "mediumlightskintone"
-Emoji.Light = "lightskintone"
+Emoji.Dark = "d"
+Emoji.MediumDark = "md"
+Emoji.Medium = "m"
+Emoji.MediumLight = "ml"
+Emoji.Light = "l"
 
 return Emoji
