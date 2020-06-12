@@ -23,11 +23,12 @@ _=[[
 
     
     lua-emoji by Patrick Dill
+    https://devforum.roblox.com/t/lua-emoji-convert-text-to-emojis-as-you-would-in-discord/619924
 
     Usage: 
         local emoji = require(path.to.emoji)
 
-        print(emoji("emojis is :ok_hand:"))
+        print(emoji("emojis are :ok_hand:!"))
 
 ]]
 
