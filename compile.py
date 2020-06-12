@@ -1,5 +1,7 @@
 from getemojis import get_emojis
+import re
 import json
+import codecs
 
 with open("./.header.lua", "r") as file:
     header = file.read()
@@ -7,7 +9,11 @@ with open("./.header.lua", "r") as file:
 with open("./.source.lua", "r") as file:
     source = file.read()
 
-middle = "local codes = HttpService:JSONDecode([[{}]])".format(json.dumps(get_emojis()))
+encoded = "{" + ",".join([
+    '["{}"]="{}"'.format(key, val) for key, val in get_emojis().items()
+]) + "}"
 
-with open("emoji.lua", "w") as file:
+middle = "local codes = " + encoded
+
+with codecs.open("emoji.lua", "w+", "utf-8", errors="surrogatepass") as file:
     file.write("\n\n".join([header, middle, source]))

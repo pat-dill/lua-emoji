@@ -31,5 +31,3 @@ _=[[
         print(emoji("emojis are :ok_hand:!"))
 
 ]]
-
-local HttpService = game:GetService("HttpService")
