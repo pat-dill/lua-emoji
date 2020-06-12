@@ -25,7 +25,7 @@ Aliases
 
 Several aliases can be used for each emoji depending on your preferences:
 
-```
+```lua
 print(emoji(":thumbs_up: = :thumbs-up: = :thumbsup:"))
 -- output: 👍 = 👍 = 👍
 ```
