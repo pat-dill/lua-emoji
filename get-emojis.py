@@ -35,6 +35,18 @@ for code, name in countries.items():
         dump[code.lower()] = dump[s_name]
         dump[iso3[code.upper()].lower()] = dump[s_name]
 
+# manual updates
+
+dump.update({
+    "light": "\ud83c\udffb",
+    "dark": "\ud83c\udfff",
+    "mediumlight": "\ud83c\udffc",
+    "mediumdark": "\ud83c\udffe",
+    "medium": "\ud83c\udffd"
+})
+
+# log
+
 print("{} aliases\n{} total".format(len(dump)-base_len, len(dump)))
 
 # save

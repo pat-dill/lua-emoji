@@ -4045,7 +4045,12 @@ local codes = HttpService:JSONDecode(
     "qa": "\ud83c\uddf6\ud83c\udde6",
     "qat": "\ud83c\uddf6\ud83c\udde6",
     "mz": "\ud83c\uddf2\ud83c\uddff",
-    "moz": "\ud83c\uddf2\ud83c\uddff"
+    "moz": "\ud83c\uddf2\ud83c\uddff",
+    "light": "\ud83c\udffb",
+    "dark": "\ud83c\udfff",
+    "mediumlight": "\ud83c\udffc",
+    "mediumdark": "\ud83c\udffe",
+    "medium": "\ud83c\udffd"
 }
 ]]
 )
