@@ -39,7 +39,7 @@ local function get_replacer(skintone)
     return function (item)
         local name = item:sub(2, -2):lower()
         
-        name, _ = name:gsub("[_-%.]", "")
+        name, _ = name:gsub("[%_%-%.]", "")
         local st_name = name .. skintone
 
         return codes[st_name] or codes[name] or item
